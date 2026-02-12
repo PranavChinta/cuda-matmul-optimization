@@ -32,6 +32,14 @@ nvcc -O3 matmul.cu -o matmul.exe
 .\matmul.exe 1024 1024 1024
 ```
 
+## Sample Output (RTX 3050 Laptop GPU, CUDA 13.0, M=N=K=1024)
+
+CPU: 2473.6 ms  
+
+Naive GPU:  8.08 ms, 265.7 GFLOP/s  
+Tiled GPU:  5.25 ms, 409.0 GFLOP/s  
+
+Speedup (tiled vs naive): 1.54x  
 
 
 
